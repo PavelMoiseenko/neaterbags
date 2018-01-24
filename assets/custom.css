@@ -1,0 +1,158 @@
+.buy-me{	
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ec9e44;
+  float: right;
+}
+
+.quantity-selector{	
+  width: 50px;
+  float: left;
+}
+
+.clearfix{	
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.del{
+	background-color: #ec9e44;
+  	display: inline-block;
+  	border-radius: 3px;
+}
+
+
+.buy-me{
+	cursor: pointer;
+}
+
+.price{
+	display: none;
+}
+
+.quantity-label{
+	font-size: 14px;
+}
+
+.row-title-item{
+	background-color: #CCFFCC;
+}
+
+#continue-shopping{
+	display: none;
+}
+
+/*Styles for Neaterscooper*/
+
+a.btn {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 11px;
+}
+
+.button {
+    width: 85px;
+    height: 13px;
+    vertical-align: top;
+    padding: 7px 0;
+    display: inline-block;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #555;
+    border: solid 1px #707070;
+    background: #de2727;
+    background: -moz-linear-gradient(top,#f2f2f2 0%,#de2727 50%,#8f1919 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f2f2f2),color-stop(50%,#de2727),color-stop(100%,#8f1919));
+    background: -webkit-linear-gradient(top,#f2f2f2 0%,#de2727 50%,#8f1919 100%);
+    background: -o-linear-gradient(top,#f2f2f2 0%,#de2727 50%,#8f1919 100%);
+    background: -ms-linear-gradient(top,#f2f2f2 0%,#de2727 50%,#8f1919 100%);
+    background: linear-gradient(to bottom,#f2f2f2 0%,#de2727 50%,#8f1919 100%);
+    font-weight: normal;
+    float: left;
+    margin: 0;
+}
+
+.choose-box{
+    position: relative;
+    width: 153px;
+    height: 100px;
+    float: left;
+}
+
+#productColor {
+    position: relative;
+    width: 310px;
+    height: 205px;
+}
+
+.color {
+    float: left;
+    width: 60px;
+    height: 100px;
+}
+
+#productSelection {
+	width: 330px;
+    height: auto;
+    padding: 0;
+    margin: 0 0 20px 30px;
+}
+
+#rejectOffer {
+    outline: none;
+    cursor: pointer;
+    font: normal 14px/14px Arial,Helvetica,sans-serif;
+    overflow: visible;
+    position: relative;
+    border-radius: 4px -webkit-box-shadow:inset 0 0 1px 1px #fff;
+    -moz-box-shadow: inset 0 0 1px 1px #fff;
+    box-shadow: inset 0 0 1px 1px #fff;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    color: #555;
+    padding: 5px 20px;
+    border: solid 1px #707070;
+    background: linear-gradient(top,#f2f2f2 50%,#eaeaea,#ddd 50%,#cdcdcd);
+    background: -webkit-linear-gradient(top,#f2f2f2 50%,#eaeaea,#ddd 50%,#cdcdcd);
+    background: -moz-linear-gradient(top,#f2f2f2 50%,#eaeaea,#ddd 50%,#cdcdcd);
+    background: -ms-linear-gradient(top,#f2f2f2 50%,#eaeaea,#ddd 50%,#cdcdcd);
+    background: -o-linear-gradient(top,#f2f2f2 50%,#eaeaea,#ddd 50%,#cdcdcd);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f2f2f2',endColorstr='#cdcdcd');
+    width: 202px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+input[type=submit].accept_input_btn {
+    border: solid 1px #707070;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 0 1px 1px #fff;
+    -moz-box-shadow: inset 0 0 1px 1px #fff;
+    -webkit-box-shadow: inset 0 0 1px 1px #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 20px;
+    font-size: 20px;
+    width: 202px;
+    background: linear-gradient(top,#4d9e21 50%,#4e9c38,#429130 50%,#246b10);
+    background: -webkit-linear-gradient(top,#4d9e21 50%,#4e9c38,#429130 50%,#246b10);
+    background: -moz-linear-gradient(top,#4d9e21 50%,#4e9c38,#429130 50%,#246b10);
+    background: -ms-linear-gradient(top,#4d9e21 50%,#4e9c38,#429130 50%,#246b10);
+    background: -o-linear-gradient(top,#4d9e21 50%,#4e9c38,#429130 50%,#246b10);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4d9e21',endColorstr='#246b10');
+}
+
+#upsellTxt input#rejectOffer,
+#upsellTxt input#acceptOffer{
+	border: 1px solid black;
+}
+

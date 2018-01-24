@@ -1,0 +1,36 @@
+TEST
+
+{% schema %}
+  {
+    "name": "Static section",
+   	"class": "static-section",
+	"settings": [
+      {
+        "id": "header",
+        "type": "text",
+        "label": "Header",
+        "default": "Hello world"
+      }
+    ],
+
+	"blocks": [
+      {
+        "type": "quote",
+        "name": "Quote",
+        "settings": [
+          {
+            "id": "content",
+            "type": "text",
+            "label": "Quote"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
