@@ -4,23 +4,34 @@
             <div class="outMain">
                 <div class="mainTop"></div><a href="javascript:" data-sn-id="12919" class="dtm-sn-footer" style="display: none;">Edit</a>
 
-                <div class="mainWrap" id="formWrap">
-                    
-<!--                   <form action="/" method="post"> -->
+                <div class="mainWrap" id=php ">
+                    <div id="form">
+    <!--                   <form action="/" method="post"> -->
                   	   <div id="productSelection">
                                   <div class="FormHeadlineL"><strong>STEP 1:</strong><br />Choose your items:</div>
                         <div id="productColor">
-                         {% assign products = collections['neater-scooper'].products %}
-                           {% for product in products %}
-                          		 <div id="choose" class="choose-box">                           			
-                                   <div class="color">
-                                     <img src="{{ product.featured_image | product_img_url: 'medium' }}">
-                                   </div>                        
-                                   <p class="text">{{ product.title}}<span></span></p>
-                                   <div class="button"><a href="#reviewOrder" class="btn" title="Add This Item" data-productvariantid="{{ product.variants[0].id }}">ADD TO CART</a></div>
-                                 </div> 
-                       
-                           {% endfor %}
+                            <div id="colorSelect">
+                                <strong>Dispenser #1:</strong><br>
+                                {% assign products = collections['dispensers'].products %}
+                                {% for product in products %}
+                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" id="ActionCode0" name="ActionCode0" value="NBBLK" /><br>{{ product.title}}</div>
+                                    <!--{#<div id="choose" class="choose-box">#}
+                                        {#<div class="color">#}
+                                            {#<img src="{{ product.featured_image | product_img_url: 'medium' }}">#}
+                                        {#</div>#}
+                                        {#<p class="text">{{ product.title}}<span></span></p>#}
+                                        {#<div class="button"><a href="#reviewOrder" class="btn" title="Add This Item" data-productvariantid="{{ product.variants[0].id }}">ADD TO CART</a></div>#}
+                                    {#</div>#}-->
+                                {% endfor %}
+                            </div>
+                            <hr />
+                            <div id="colorSelect">
+                                <strong>Dispenser #2:</strong><br>
+                                {% assign products = collections['freedispensers'].products %}
+                                {% for product in products %}
+                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" id="ActionCode0" name="ActionCode0" value="NBBLK" /><br>{{ product.title}}</div>
+                                {% endfor %}
+                            </div>
                         </div>
                                   <hr/>
                          		  {% assign products = collections['neaterfeeder-cat'].products %}
@@ -29,66 +40,35 @@
                                     <label>Yes, please include my FREE Neater Feeder for just an additional $9.99 P&amp;H. </label>
 								  {% endfor %}	
                                   <div class="clearer"></div>
-                              </div>	
-                  
-                  
-                  
-                  
-<!--                         <div id="productSelection">
-                            <div class="FormHeadlineL">
-                                <strong><strong>STEP 1:</strong><br />Select your offer</strong>
+                              </div>
+                    <div id="bonusSelection">
+                        <div class="FormHeadlineL"><strong>STEP 2:</strong><br>Select your Free Neater Feeder Bonus Offer
+                        </div>
+                        <div id="bonus">
+                            <div class="dogs"><img src="/images/desktop/small.png"></div>
+                            <div class="dogs"><img src="/images/desktop/larg.png"></div>
+                            <div id="bonusChoose">
+                                <input type="radio" id="Small" name="BonusOffer" checked="checked"/> Small - for cats<br>or small dogs</div>
+                            <div id="bonusChoose"><input type="radio" id="Large" name="BonusOffer"/> Large - for medium<br>to large dogs</div>
+                            <div id="bonusText">
+                                FREE, just pay<br>$9.99 P&amp;H!
                             </div>
-                          <div class="SubHeadlineL"><label><span class="requiredIcon">*</span></label><span  class="quantity-label">How many would you like? </span><select class="cardExpirationMonth" id="ActionQuantity0" name="ActionQuantity0"><option>1</option><option>2</option><option>3</option></select></div>
-                            <hr />
-                            <div class="sizeTitle">
-                                <div class="SubHeadlineL"><label><span class="requiredIcon">*</span></label>Select your size:</div>
-                                <p>
-                              	<a href="#" title="Sizing Chart" onclick="$('#exampleModalChart').arcticmodal();return false;">Click Here for Sizing Chart</a>
-                                	<div class="g-hidden">
-                                      <div class="box-modal" id="exampleModalChart">
-                                          <div class="box-modal_close arcticmodal-close">close</div>
-                                         	{{ pages.sizing-chart.content }}
-                                      </div>
-                                    </div>
-                              </p>
-                            </div>                          
-                          {% assign products = collections['buyneaterfeeder'].products | sort: 'price' %}
-                          {% for product in products %}
-                            <div class="Quantity">
-                                <label for="ActionCode0"><img src="{{ product.featured_image | product_img_url: 'medium' }}"/>
-                                    <div class="choice" id={{ product.handle }}>
-                                       <input id={{ product.variants[0].id }} name="ActionCode0" type="radio" />
-                                        
-                                      	{{ product.title}}
-                                    </div>
-
-                                  <div class="clearfix"></div>
-                              	</label>
-                                    <p class="price">Price: {{ product.price | money}}</p>
-                              		{% if product.type == "cat" or product.type == "smalldog"  %}
-                              			<p>{{ product.price | money}} + $7.99 S&H</p>
-                              			{% else %}
-                              			<p>{{ product.price | money}} + $9.99 S&H</p>
-                                    {% endif %}
-
-                            </div>                                            
-                           {% endfor %}
-                            <p id="note">
-                                <strong>NOTE:</strong> Need more that one size? You will be able to order additional
-                                sizes on a later page.
-                            </p>
-                        </div> -->
-
+                            <div id="bonusText">
+                                FREE, just pay<br>$19.99 P&amp;H!
+                            </div>
+                            <div id="bonusChooseBTM"><input type="radio" id="None" name="BonusOffer"/> No, thanks. I do not want to receive a<br>Free Neater Feeder at this time</div>
+                        </div>
 
                         <div>
         <span style="color: #FF0000; font-weight: bold">
 
         </span>
-                        </div>          
-              			<div id="form">
+                        </div>
+                    </div>
+
 
                             <div id="reviewOrder">
-                                <div class="FormHeadlineL"><strong>STEP 2:</strong><br />Review your order</div>
+                                <div class="FormHeadlineL"><strong>STEP 3:</strong><br />Review your order</div>
 
                                 <table id="orderReview" class="orderItemsTable reviewTable">
                                     <thead class="reviewTableHead">
@@ -730,7 +710,7 @@
                             <div id="SSL" style="text-align: center;">
                                 <div class="dtm-sn-header" data-sn-id="34" style="width: 100%; height: 1px; display: none;"></div>
                                 <p>
-                                    <img src="{{ 'PositiveSSL_tl_trans.png' | file_url }}" alt="Positive SSL on a transparent background" title="Positive SSL on a transparent background" border="0" />
+                                    <img src="{{ 'ssl.png' | file_url }}" alt="Positive SSL on a transparent background" title="Positive SSL on a transparent background" border="0" />
                                 </p>
                                 <a href="javascript:" data-sn-id="34" class="dtm-sn-footer" style="display: none;">Edit</a>
 
@@ -738,7 +718,7 @@
                         </div>
                         <div id="formProduct">
                             <div class="dtm-sn-header" data-sn-id="47836" style="width: 100%; height: 1px; display: none;"></div>            
-                          <img src="{{ 'neater-scooper-form-product.jpg' | file_url }}" alt="Order Neater Feeder&reg; Express Today!" />
+                          <img src="{{ 'neater-bag-form-product.jpg' | file_url }}" alt="Order Neater Feeder&reg; Express Today!" />
                           <a href="javascript:;" data-sn-id="47836" class="dtm-sn-footer" style="display: none;">Edit</a>
 
                         </div>

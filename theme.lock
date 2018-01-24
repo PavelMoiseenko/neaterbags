@@ -8,7 +8,7 @@ assets/bg-music.png:
 assets/buyneaterbags.js.liquid:
   development: 2018-01-24T09:25:35-05:00   8f707ebc00d81b95e2a1f7cf79170761
 assets/custom.css:
-  development: 2018-01-24T09:00:38-05:00   c29669d38b17ce1dc81e765556a5dd97
+  development: 2018-01-24T11:57:14-05:00   4d27c95ff0c3f3dbeec460c2d219bcdd
 assets/discover.png:
   development: 2018-01-24T09:00:53-05:00   8f6639fd2abb3fb96429ff8d2b160efc
 assets/favicon.ico:
@@ -100,7 +100,7 @@ sections/featured-video.liquid:
 sections/footer.liquid:
   development: 2018-01-24T09:00:48-05:00   ecd29318add9c6aa96612944821b8edc
 sections/form-template.liquid:
-  development: 2018-01-24T09:01:17-05:00   ef69b3ba98b78738701a4caf367875a7
+  development: 2018-01-24T12:02:31-05:00   28ad3a53ea123529b955856cae6d42d0
 sections/gallery.liquid:
   development: 2018-01-24T09:00:44-05:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:

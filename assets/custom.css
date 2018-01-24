@@ -1,9 +1,26 @@
-.buy-me{	
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #ec9e44;
-  float: right;
+#productColor .color {
+    width: 88px;
+    height: 188px;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#formWrap{
+    min-width: 360px;
+    width: 400px;
+    margin: 15px 0 15px 40px;
+    float: left;
+}
+
+#bonusSelection {
+    background: #fff;
+    width: auto;
+    height: auto;
+    padding: 0 10px 10px;
+    margin: 0 0 20px 0;
+    border: solid 1px #000;
+    overflow: hidden;
 }
 
 .quantity-selector{	
@@ -87,7 +104,6 @@ a.btn {
 
 #productColor {
     position: relative;
-    width: 310px;
     height: 205px;
 }
 
@@ -98,7 +114,7 @@ a.btn {
 }
 
 #productSelection {
-	width: 330px;
+	max-width: 500px;
     height: auto;
     padding: 0;
     margin: 0 0 20px 30px;
