@@ -6,6 +6,39 @@
     text-align: center;
 }
 
+#form{
+    width: 385px;
+}
+
+.dogs {
+    float: left;
+    width: 145px;
+    margin: 0 14px;
+}
+
+#bonusChoose {
+    background-color: #f1efe7;
+    text-align: center;
+    float: left;
+    margin: 9px;
+    width: 150px;
+}
+
+#bonusText {
+    text-align: center;
+    float: left;
+    width: 150px;
+    margin: 0 9px;
+}
+
+#bonusChooseBTM {
+    background-color: #f1efe7;
+    text-align: center;
+    float: left;
+    margin: 9px;
+    width: 330px;
+}
+
 #formWrap{
     min-width: 360px;
     width: 400px;

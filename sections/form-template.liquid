@@ -14,14 +14,7 @@
                                 <strong>Dispenser #1:</strong><br>
                                 {% assign products = collections['dispensers'].products %}
                                 {% for product in products %}
-                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" id="ActionCode0" name="ActionCode0" value="NBBLK" /><br>{{ product.title}}</div>
-                                    <!--{#<div id="choose" class="choose-box">#}
-                                        {#<div class="color">#}
-                                            {#<img src="{{ product.featured_image | product_img_url: 'medium' }}">#}
-                                        {#</div>#}
-                                        {#<p class="text">{{ product.title}}<span></span></p>#}
-                                        {#<div class="button"><a href="#reviewOrder" class="btn" title="Add This Item" data-productvariantid="{{ product.variants[0].id }}">ADD TO CART</a></div>#}
-                                    {#</div>#}-->
+                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" name="dispensers" value="{{ product.variants[0].id }}" data-productvariantid="{{ product.variants[0].id }}" /><br>{{ product.title}}</div>
                                 {% endfor %}
                             </div>
                             <hr />
@@ -29,7 +22,7 @@
                                 <strong>Dispenser #2:</strong><br>
                                 {% assign products = collections['freedispensers'].products %}
                                 {% for product in products %}
-                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" id="ActionCode0" name="ActionCode0" value="NBBLK" /><br>{{ product.title}}</div>
+                                    <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input type="radio" name="freedispensers" value="{{ product.variants[0].id }}" data-productvariantid="{{ product.variants[0].id }}" /><br>{{ product.title}}</div>
                                 {% endfor %}
                             </div>
                         </div>
@@ -45,11 +38,16 @@
                         <div class="FormHeadlineL"><strong>STEP 2:</strong><br>Select your Free Neater Feeder Bonus Offer
                         </div>
                         <div id="bonus">
-                            <div class="dogs"><img src="/images/desktop/small.png"></div>
-                            <div class="dogs"><img src="/images/desktop/larg.png"></div>
-                            <div id="bonusChoose">
-                                <input type="radio" id="Small" name="BonusOffer" checked="checked"/> Small - for cats<br>or small dogs</div>
-                            <div id="bonusChoose"><input type="radio" id="Large" name="BonusOffer"/> Large - for medium<br>to large dogs</div>
+                            {% assign products = collections['neaterfeeder'].products %}
+                            {% for product in products %}
+                                <div class="dogs"><img src="{{ product.featured_image | product_img_url: 'medium' }}"></div>
+                            {% endfor %}
+                            {% assign products = collections['neaterfeeder'].products %}
+                            {% for product in products %}
+                                <div id="bonusChoose">
+                                    <input type="radio" name="BonusOffer" checked="checked"/>{{ product.title }}
+                                </div>
+                            {% endfor %}
                             <div id="bonusText">
                                 FREE, just pay<br>$9.99 P&amp;H!
                             </div>
@@ -85,26 +83,6 @@
                                     <tbody class="reviewTableBody">
                                     </tbody>
                                     <tfoot class="reviewTableFoot alignTextRight">
-
-<!--                                     <tr style="border-top: 1px solid #ccc;">
-                                        <td colspan="3">Sub Total:</td>
-                                        <td>
-                                            <label class="subtotal">$0.00</label></td>
-                                    </tr> -->
-<!-- 
-                                    <tr>
-                                        <td colspan="3">Processing & Handling</td>
-                                        <td>
-                                            <label class="phtotal">$0.00</label></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td colspan="3">State Tax:&nbsp;&nbsp;
-
-                                            <input type="text" class="zc" id="zc" name="zc" value="" placeholder="Enter Zip Code" /></td>
-                                        <td>
-                                            <label class="taxtotal">$0.00</label></td>
-                                    </tr> -->
 
                                     <tr>
                                         <td colspan="2"><b>Estimated Order Subtotal</b></td>
