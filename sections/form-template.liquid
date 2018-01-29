@@ -46,6 +46,11 @@
             <div class="FormHeadlineL"><strong>STEP 2:</strong><br>Select your Free Neater Feeder Bonus Offer
             </div>
             <div id="bonus">
+                {% assign products = collections['freebags'].products %}
+                {% for product in products %}
+                    <input type="hidden" value="{{ product.variants[0].id }}"
+                           data-productvariantid="{{ product.variants[0].id }}" name="freebags"/>
+                {% endfor %}
                 {% assign products = collections['neaterfeeder'].products %}
                 {% for product in products %}
                     <div class="dogs"><img src="{{ product.featured_image | product_img_url: 'medium' }}"></div>
