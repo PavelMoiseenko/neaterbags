@@ -238,7 +238,14 @@ $(document).ready(function () {
     //Action: popup call
     $(".info_popupContinue").on("click", function (e) {
         e.preventDefault();
-        $('#ns-popup').arcticmodal();
+        var selectedDispenser = $("input[name='dispensers']:checked").data("productvariantid");
+        var selectedFreeDispenser = $("input[name='freedispensers']:checked").data("productvariantid");
+        if(selectedDispenser && selectedFreeDispenser){
+            $('#ns-popup').arcticmodal();
+        }
+        else{
+            $('#nb-popup-no-choice').arcticmodal();
+        }
     });
 
     //Action: reject offer bags
