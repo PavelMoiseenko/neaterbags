@@ -1,6 +1,5 @@
 #productColor .color {
     width: 88px;
-    height: 188px;
     float: left;
     display: inline;
     text-align: center;
@@ -165,20 +164,11 @@ a.btn {
 
 #productColor {
     position: relative;
-    height: 205px;
 }
 
 .color {
     float: left;
     width: 60px;
-    height: 100px;
-}
-
-#productSelection {
-	max-width: 500px;
-    height: auto;
-    padding: 0;
-    margin: 0 0 20px 30px;
 }
 
 #rejectOffer {

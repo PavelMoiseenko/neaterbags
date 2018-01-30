@@ -289,7 +289,7 @@ $(document).ready(function () {
     }
 
     //Action: clear cart afterlogo click
-    $("h1 .logo__image").on("click", function (e) {
+    $("#logo img").on("click", function (e) {
         e.preventDefault();
         clearCartNb();
         location.href = "/";

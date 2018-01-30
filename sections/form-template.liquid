@@ -1,7 +1,3 @@
-<div id="formTitle">
-    <img src="{{ 'neater-feeder-express-form-title.png' | file_url }}"
-         alt="Fill Out The Form Below To Order Neater Feeder&reg; Express Now! This offer is not available in stores."/>
-</div>
 <div class="outMain">
     <div class="mainTop"></div>
     <a href="javascript:" data-sn-id="12919" class="dtm-sn-footer" style="display: none;">Edit</a>
@@ -10,6 +6,7 @@
     ">
     <div id="form">
         <!--                   <form action="/" method="post"> -->
+        <p class="indicate fn--center u-mar--top u-mar--center u-pad--vert"><span>*</span>Indicates Required Field</p>
         <div id="productSelection">
             <div class="FormHeadlineL"><strong>STEP 1:</strong><br/>Choose your items:</div>
             <div id="productColor">
@@ -17,23 +14,32 @@
                     <strong>Dispenser #1:</strong><br>
                     {% assign products = collections['dispensers'].products %}
                     {% for product in products %}
-                        <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input
-                                    type="radio" name="dispensers" value="{{ product.variants[0].id }}"
-                                    data-productvariantid="{{ product.variants[0].id }}"/><br>{{ product.title }}</div>
+                        <div class="color">
+                          <img src="{{ product.featured_image | product_img_url: 'medium' }}">
+                          <input type="radio" name="dispensers" value="{{ product.variants[0].id }}"data-productvariantid="{{ product.variants[0].id }}"/>
+                          <br>
+                          <span class="product-name">
+                            {{ product.title }}
+                          </span>
+                        </div>
                     {% endfor %}
                 </div>
-                <hr/>
+                <hr>
                 <div id="colorSelect">
                     <strong>Dispenser #2:</strong><br>
                     {% assign products = collections['freedispensers'].products %}
                     {% for product in products %}
-                        <div class="color"><img src="{{ product.featured_image | product_img_url: 'medium' }}"><input
-                                    type="radio" name="freedispensers" value="{{ product.variants[0].id }}"
-                                    data-productvariantid="{{ product.variants[0].id }}"/><br>{{ product.title }}</div>
+                        <div class="color">
+                          <img src="{{ product.featured_image | product_img_url: 'medium' }}">
+                          <input type="radio" name="freedispensers" value="{{ product.variants[0].id }}"data-productvariantid="{{ product.variants[0].id }}"/>
+                          <br>
+                          <span class="product-name">
+                            {{ product.title }}
+                          </span>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
-            <hr/>
             {% assign products = collections['neaterfeeder-cat'].products %}
             {% for product in products %}
                 <input class="cartParam" data-productvariantid="{{ product.variants[0].id }}" data-paramname="cbx"
@@ -373,471 +379,9 @@
                                    
                                    
                                   
-                                <div class="g-hidden">
-                                  <div class="box-modal" id="exampleModalContinue">
-                                      <div class="box-modal_close arcticmodal-close">close</div>
-                                      <!--{{ pages.continue-submit-page.content }}-->
-                                          <div class='ov_h'>
-                                          	<div class='left_image_popup'>
-                                              <img class="img-upgrade" id="img-upgrade-cat"
-                                                   src='{{ 'cat_upgrade.jpg' | file_url }}' alt=''/>
-                                              <img class="img-upgrade" id="img-upgrade-smalldog"
-                                                   src='{{ 'cat_upgrade.jpg' | file_url }}' alt=''/>
-                                              <img class="img-upgrade" id="img-upgrade-meddog"
-                                                   src='{{ 'meddog_upgrade.jpg' | file_url }}' alt=''/>
-                                              <img class="img-upgrade" id="img-upgrade-largedog"
-                                                   src='{{ 'largedog_upgrade.jpg' | file_url }}' alt=''/>
-                                            </div>
-                                            <div class='right_content_popup'>
-                                              <h2>Upgrade to the Neater Feeder Deluxe!</h2>
-                                              <p>You’ve taken the first step to having a neater pet, so we thought you might want to consider upgrading to the Neater Feeder Deluxe! It’s available in 3 stylish designer colors - cranberry, bronze or cappuccino. It also comes with a much larger water bowl than the Express version you’ve ordered, and it has higher splash guards and a larger spillage reservoir for greater mess protection.  With the Deluxe, you’ll also have the ability to add optional leg extensions to raise the bowl height for taller pets.</p>
-                                              <p class="description-upgrade">Neater Feeder Deluxe pricing for Cats is $34.99 + $7.99 S&amp;H</p>
-                                              <a class='click_here info_popup' href="#"
-                                                 onclick="$('#exampleModalContinueClick_here').arcticmodal();return false;">
-                                                Click Here for Deluxe Sizing Information
-                                              </a>
-                                              <div class="g-hidden">
-                                                <div class="box-modal" id="exampleModalContinueClick_here">
-                                                    <div class="box-modal_close arcticmodal-close">close</div>
-                                                  <div>
-                                                    <h1>Sizing Chart</h1>
-                                                      <table width="100%" cellspacing="0" cellpadding="5">
-                                                        <tr class="row-title-item">
-                                                          <td width="44%"><strong>CAT</strong></td>
-                                                          <td width="28%"><strong>DELUXE</strong></td>
-                                                          <td width="28%"><strong>WITH LEG EXTENSIONS</strong></td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Food Bowl Capacity:</td>
-                                                          <td>1 cup</td>
-                                                          <td>1 cup</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Water Bowl Capacity:</td>
-                                                          <td>1.5 cups</td>
-                                                          <td>1.5 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Weight Range:</td>
-                                                          <td>All</td>
-                                                          <td>All</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Shoulder Height:</td>
-                                                          <td>Up to 6 Inches</td>
-                                                          <td>6+ Inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Feeding Height (at bowl rim):</td>
-                                                          <td>3 inches</td>
-                                                          <td>4.5 inches</td>
-                                                        </tr>      
-                                                        <tr>
-                                                          <td>Neater Feeder Dimensions:</td>
-                                                          <td>14L x 9W x 6H</td>
-                                                          <td>14L x 9W x 7.5H</td>
-                                                        </tr>
-                                                        <tr class="row-title-item">
-                                                          <td><strong>SMALL DOG (up to 18 lbs.)</strong></td>
-                                                          <td><strong>DELUXE</strong></td>
-                                                          <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Food Bowl Capacity:</td>
-                                                          <td>1.5 cups</td>
-                                                          <td>1.5 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Water Bowl Capacity:</td>
-                                                          <td>2.2 cups</td>
-                                                          <td>2.2 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Weight Range:</td>
-                                                          <td>Up to 18 lbs.</td>
-                                                          <td>Up to 18 lbs.</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Shoulder Height:</td>
-                                                          <td>Up to 6 Inches</td>
-                                                          <td>6-9 Inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Feeding Height (at bowl rim):</td>
-                                                          <td>3 inches</td>
-                                                          <td>4.5 inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Neater Feeder Dimensions:</td>
-                                                          <td>14L x 9W x 6H</td>
-                                                          <td>14L x 9W x 7.5H</td>
-                                                        </tr>
-                                                        <tr class="row-title-item">
-                                                          <td><strong>MEDIUM DOG (15-40 lbs.)</strong></td>
-                                                          <td><strong>DELUXE</strong></td>
-                                                          <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Food Bowl Capacity:</td>
-                                                          <td>3.5 cups</td>
-                                                          <td>3.5 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Water Bowl Capacity:</td>
-                                                          <td>5 cups</td>
-                                                          <td>5 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Weight Range:</td>
-                                                          <td>15-40 lbs.</td>
-                                                          <td>15-40 lbs.</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Shoulder Height:</td>
-                                                          <td>9-12 Inches</td>
-                                                          <td>12-16 Inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Feeding Height (at bowl rim):</td>
-                                                          <td>5 inches</td>
-                                                          <td>7.5 inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Neater Feeder Dimensions:</td>
-                                                          <td>18L x 11W x 10H</td>
-                                                          <td>18L x 11W x 12.5H</td>
-                                                        </tr>
-                                                        <tr class="row-title-item">
-                                                          <td><strong>LARGE DOG (35-100+ lbs.)</strong></td>
-                                                          <td><strong>DELUXE</strong></td>
-                                                          <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Food Bowl Capacity:</td>
-                                                          <td>7 cups</td>
-                                                          <td>7 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Water Bowl Capacity:</td>
-                                                          <td>9 cups</td>
-                                                          <td>9 cups</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Weight Range:</td>
-                                                          <td>35-100+ lbs.</td>
-                                                          <td>35-100+ lbs.</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Pet Shoulder Height</td>
-                                                          <td>15-21 Inches</td>
-                                                          <td>20+ Inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Feeding Height (at bowl rim)</td>
-                                                          <td>8 inches</td>
-                                                          <td>11 inches</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Neater Feeder Dimensions:</td>
-                                                          <td>21L x 13W x 14.5H</td>
-                                                          <td>21L x 13W x 17.5H</td>
-                                                        </tr>
-                                                    </table>
-                                                  </div>
-                                                  </div>
-                                                </div>
-                                              <p>
-                                              	Please choose your color(s): <br/>
-                                                <i>(Total quantity selected must match total quantity ordered on the previous page. Don't worry, you may add more Neater Feeders later in the order process, if you wish!)</i>
-                                              </p>
-                                              <div>
-                                              <div class="sets">
-                                              {% for line in cart.items %}
-
-                                                  {% if line.product.type contains "cat_height" or line.product.type contains "small_dog_height" or line.product.type contains "med_dog_height"  or line.product.type contains "large_dog_height" or line.product.type contains "upsell" or line.variant.options contains "bronze" or line.variant.options contains "cappuchino" or line.variant.options contains "cranberry" %}
-                                                  {% else %}
-                                                      <ul style='float: left; width: 50%' class="pet" id={{ line.id }}>
-                                                <b>{{ line.title }}</b>
-                                                <li>
-                                                  <div class="color cranberry"></div>
-                                                  <label style="display: inline-block;">
-                                                    <select class="cranberry-pet">
-                                                      <option>0</option>
-                                                      <option>1</option>
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                    </select>
-                                                  </label>
-                                                  <span class='name_choose'>Cranberry</span></li>
-                                                <li>
-                                                  <div class="color bronze"></div>
-                                                  <label style="display: inline-block;">
-                                                    <select class="bronze-pet">
-                                                      <option>0</option>
-                                                      <option>1</option>
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                    </select>
-                                                  </label>
-                                                  <span class='name_choose'>Bronze</span></li>
-                                                <li>
-                                                  <div class="color cap"></div>
-                                                  <label style="display: inline-block;">
-                                                    <select class="cappuchino-pet">
-                                                      <option>0</option>
-                                                      <option>1</option>
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                    </select>
-                                                  </label>
-                                                  <span class='name_choose'>Cappuchino</span>
-                                                </li>
-                                              </ul>
-                                                  {% endif %}
-                                              {% endfor %}                                                
-                                              </div>
-                                              <div style="content: ''; display: block; clear: both"></div>
-                                            </div>
-                                              <p>
-                                                <strong>
-                                                	Would you like to upgrade to the Deluxe Neater Feeder?
-                                                </strong>
-                                              </p>
-                                              <div class='popup_choose_links'>
-                                                  <a href="#" id="upgrade"><img src='{{ 'yes_button.gif' | file_url }}'
-                                                                                alt=''/></a>
-                                                      <div class="g-hidden">
-                                                        <div class="box-modal" id="exampleModalContinue2">
-                                                           <div class="box-modal_close arcticmodal-close">close</div>
-                                                            <div class='ov_h'>
-                                                                <div class='left_image_popup'>
-                                                                  <img id="img-upgrade-cat"
-                                                                       src='{{ 'LEGCT.jpg' | file_url }}' alt=''/>
-                                                                </div>
-                                                                <div class='right_content_popup'>
-                                                                  <h2>Add More Height for Taller Pets!</h2>
-                                                                  <p id="height_description">
-                                                                    Add leg extensions to increase the bowl height for a custom fit feeding position for your pet. 
-                                                                    They're just $5.99 with free shipping. Order now and SAVE BIG on shipping! Raises feeding height (at rim of bowl) from 3" to 4.5"
-                                                                  </p>
-                                                                  <a class='click_here info_popup' href="#"
-                                                                     onclick="$('#exampleModalContinueClick_hereInfo').arcticmodal();return false;">Click Here for Sizing Information</a>
-                                              					  <div class="g-hidden">
-                                                                  	<div class="box-modal"
-                                                                         id="exampleModalContinueClick_hereInfo">
-                                                                      <div class="box-modal_close arcticmodal-close">close</div>
-                                                                      <div>
-                                                                        <h1>Sizing Chart</h1>
-                                                                          <table width="100%" cellspacing="0"
-                                                                                 cellpadding="5">
-                                                                            <tr class="row-title-item">
-                                                                              <td width="44%"><strong>CAT</strong></td>
-                                                                              <td width="28%"><strong>DELUXE</strong></td>
-                                                                              <td width="28%"><strong>WITH LEG EXTENSIONS</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Food Bowl Capacity:</td>
-                                                                              <td>1 cup</td>
-                                                                              <td>1 cup</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Water Bowl Capacity:</td>
-                                                                              <td>1.5 cups</td>
-                                                                              <td>1.5 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Weight Range:</td>
-                                                                              <td>All</td>
-                                                                              <td>All</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Shoulder Height:</td>
-                                                                              <td>Up to 6 Inches</td>
-                                                                              <td>6+ Inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Feeding Height (at bowl rim):</td>
-                                                                              <td>3 inches</td>
-                                                                              <td>4.5 inches</td>
-                                                                            </tr>      
-                                                                            <tr>
-                                                                              <td>Neater Feeder Dimensions:</td>
-                                                                              <td>14L x 9W x 6H</td>
-                                                                              <td>14L x 9W x 7.5H</td>
-                                                                            </tr>
-                                                                            <tr class="row-title-item">
-                                                                              <td><strong>SMALL DOG (up to 18 lbs.)</strong></td>
-                                                                              <td><strong>DELUXE</strong></td>
-                                                                              <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Food Bowl Capacity:</td>
-                                                                              <td>1.5 cups</td>
-                                                                              <td>1.5 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Water Bowl Capacity:</td>
-                                                                              <td>2.2 cups</td>
-                                                                              <td>2.2 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Weight Range:</td>
-                                                                              <td>Up to 18 lbs.</td>
-                                                                              <td>Up to 18 lbs.</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Shoulder Height:</td>
-                                                                              <td>Up to 6 Inches</td>
-                                                                              <td>6-9 Inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Feeding Height (at bowl rim):</td>
-                                                                              <td>3 inches</td>
-                                                                              <td>4.5 inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Neater Feeder Dimensions:</td>
-                                                                              <td>14L x 9W x 6H</td>
-                                                                              <td>14L x 9W x 7.5H</td>
-                                                                            </tr>
-                                                                            <tr class="row-title-item">
-                                                                              <td><strong>MEDIUM DOG (15-40 lbs.)</strong></td>
-                                                                              <td><strong>DELUXE</strong></td>
-                                                                              <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Food Bowl Capacity:</td>
-                                                                              <td>3.5 cups</td>
-                                                                              <td>3.5 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Water Bowl Capacity:</td>
-                                                                              <td>5 cups</td>
-                                                                              <td>5 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Weight Range:</td>
-                                                                              <td>15-40 lbs.</td>
-                                                                              <td>15-40 lbs.</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Shoulder Height:</td>
-                                                                              <td>9-12 Inches</td>
-                                                                              <td>12-16 Inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Feeding Height (at bowl rim):</td>
-                                                                              <td>5 inches</td>
-                                                                              <td>7.5 inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Neater Feeder Dimensions:</td>
-                                                                              <td>18L x 11W x 10H</td>
-                                                                              <td>18L x 11W x 12.5H</td>
-                                                                            </tr>
-                                                                            <tr class="row-title-item">
-                                                                              <td><strong>LARGE DOG (35-100+ lbs.)</strong></td>
-                                                                              <td><strong>DELUXE</strong></td>
-                                                                              <td><strong>WITH LEG EXTENSIONS</strong></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Food Bowl Capacity:</td>
-                                                                              <td>7 cups</td>
-                                                                              <td>7 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Water Bowl Capacity:</td>
-                                                                              <td>9 cups</td>
-                                                                              <td>9 cups</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Weight Range:</td>
-                                                                              <td>35-100+ lbs.</td>
-                                                                              <td>35-100+ lbs.</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Pet Shoulder Height</td>
-                                                                              <td>15-21 Inches</td>
-                                                                              <td>20+ Inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Feeding Height (at bowl rim)</td>
-                                                                              <td>8 inches</td>
-                                                                              <td>11 inches</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>Neater Feeder Dimensions:</td>
-                                                                              <td>21L x 13W x 14.5H</td>
-                                                                              <td>21L x 13W x 17.5H</td>
-                                                                            </tr>
-                                                                        </table>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <p>
-                                                                    <strong>
-                                                                        Would you like to add extension legs to your Deluxe Neater Feeder?
-                                                                    </strong>
-                                                                  </p>
-                                                                  <label>
-<!--                                                                     <select id='more_height'>
-                                                                      <option>1</option>
-                                                                      <option>2</option> 
-                                                                      <option>3</option>
-                                                                    </select> -->
-                                                                      <!--                                                                     <div class="upsells">
-                                                                    {% for line in cart.items %}
-
-                                                                     {% if line.variant.options contains "bronze" or line.variant.options contains "cappuchino" or line.variant.options contains "cranberry" %} 
-                                                                        <ul style='float: left; width: 50%' class="upsell">
-                                                                          <b>{{ line.title }}</b>
-                                                                          <li>
-                                                                            <label style="display: inline-block;">
-                                                                              
-                                                                              <div id="upsell"{{ line.id }}>
-                                                                              	<input type="radio" checked class='upsell_yes' name="upsellchoice" value="0">Yes<br/> 
-   																			  	<input type="radio" name="upsellchoice" value="a4">No<br/>                               
-                                                                              </div>	
-                                                                             </label>
-
-                                                                        </ul>
-                                                                      {% endif %}
-                                                                    {% endfor %}                                                
-                                                                    </div> -->
-                                                                  </label>
-                                              					  <div class='popup_choose_links'>
-                                                                    <div class="clearfix"></div>
-                                                                    <a href="#" id="yes"><img
-                                                                                src='{{ 'yes_button.gif' | file_url }}'
-                                                                                alt=''/></a>
-                                                   					<a href="/cart" class="no_button_close_popup_2"><img
-                                                                                src='{{ 'no_button.gif' | file_url }}'
-                                                                                alt=''/></a>
-
-
-                                                                      <!--                                                                     <div style="text-align: center;" class="FormSubmit">
-                                                                      <span id="submitBtn">                             
-                                                     					 <a href="#" style='display: block;' class='info_popup info_popupContinue'><input type="image" id="yes" name="acceptOffer" style="border-width: 0px;"
-                                                                         onmouseout="this.src = '{{ 'submit_button_off.gif' | file_url }}'; " onmouseover="this.src = '{{ 'submit_button_on.gif' | file_url }}';"
-                                                                         alt="Place Order" src="{{ 'submit_button_off.gif' | file_url }}" /></a>
-                                                                      </span>
-                                                                    </div> -->
-                                                                    
-                                                                    
-                                                               	  </div>
-                                                                 </div>
-                                                             </div> 
-                                                          </div>
-                                                        </div>
-                                                  <a href="#" id="not_upgrade" class="no_button_close_popup"><img
-                                                              src='{{ 'no_button.gif' | file_url }}' alt=''/></a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                                
             </span>
-            <!--<p>By clicking the Order Now button...</p>-->
+            <p>By clicking the Order Now button...</p>
         </div>
         <div id="SSL" style="text-align: center;">
             <div class="dtm-sn-header" data-sn-id="34" style="width: 100%; height: 1px; display: none;"></div>
