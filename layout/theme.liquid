@@ -114,14 +114,8 @@
 							<div class="mainContainer">
 								{{ content_for_layout }}
 							</div>
-							<a name="order" id="ga-link5"></a>
-							<div id="formTitle">
-							    <img src="{{ 'neater-bag-formtitle.png' | file_url }}" alt="Fill out the form below to order your Neater Bag™ Dispenser now!"/>
-							</div>
 							{% if template != 'cart' %}
-								<div class="mainContainer">
 									{% section 'form-template' %}
-								</div>
 							{% endif %}
 							
 									<!--</div>

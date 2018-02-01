@@ -1,4 +1,7 @@
-<div class="outMain">
+<div id="formTitle">
+  <img src="{{ 'neater-bag-formtitle.png' | file_url }}" alt="Fill out the form below to order your Neater Bag™ Dispenser now!"/>
+</div>
+<div class="outMain mainContainer" name="order">
     <div class="mainTop"></div>
     <a href="javascript:" data-sn-id="12919" class="dtm-sn-footer" style="display: none;">Edit</a>
 
@@ -8,7 +11,7 @@
         <!--                   <form action="/" method="post"> -->
         <p class="indicate fn--center u-mar--top u-mar--center u-pad--vert"><span>*</span>Indicates Required Field</p>
         <div id="productSelection">
-            <div class="FormHeadlineL"><strong>STEP 1:</strong><br/>Choose your items:</div>
+            <div class="FormHeadlineL"><strong>STEP 1:</strong><br/>Choose Your Designs:</div>
             <div id="productColor">
                 <div id="colorSelect">
                     <strong>Dispenser #1:</strong><br>
@@ -63,19 +66,19 @@
                 {% endfor %}
                 {% assign products = collections['neaterfeeder'].products %}
                 {% for product in products %}
-                    <div id="bonusChoose">
+                    <div class="bonusChoose">
                         <input type="radio" value="{{ product.variants[0].id }}"
                                data-productvariantid="{{ product.variants[0].id }}" name="bonusoffer"
                                {% if forloop.first == true %}checked="checked"{% endif %}/>{{ product.title }}
                     </div>
                 {% endfor %}
-                <div id="bonusText">
+                <div class="bonusText">
                     FREE, just pay<br>$9.99 P&amp;H!
                 </div>
-                <div id="bonusText">
+                <div class="bonusText">
                     FREE, just pay<br>$19.99 P&amp;H!
                 </div>
-                <div id="bonusChooseBTM"><input type="radio" id="offernone" name="bonusoffer" value="nobonusoffer"/> No,
+                <div class="bonusChooseBTM"><input type="radio" id="offernone" name="bonusoffer" value="nobonusoffer"/> No,
                     thanks. I do not want to receive a<br>Free Neater Feeder at this time
                 </div>
             </div>
@@ -253,9 +256,8 @@
                                          <form>
                                         <div id="orderCompleteTxt">
                                             </div>
-                                        <div id="upsellImage"></div>
-                                        <div id="upsellTxt">
-                                            <h2 class="upsellTitle">You need make choice of dispensers!</h2>
+                                        <div>
+                                            <h2 class="upsellTitle centered">You need make choice of dispensers!</h2>
                                             <div class='clearer'></div><div class='Quantity'><h3
                                                         class='cta'></h3></div>
                                             <!-- END class='Quantity' --><div class='clearer'></div>
@@ -381,7 +383,7 @@
                                   
                                 
             </span>
-            <p>By clicking the Order Now button...</p>
+            <!-- <p>By clicking the Order Now button...</p> -->
         </div>
         <div id="SSL" style="text-align: center;">
             <div class="dtm-sn-header" data-sn-id="34" style="width: 100%; height: 1px; display: none;"></div>
@@ -400,14 +402,11 @@
 
     </div>
     <div class="dtm-sn-header" data-sn-id="47837" style="width: 100%; height: 1px; display: none;"></div>
+    <div class="clearer"></div>
     <div id="disclaimer">
         <p><strong>OFFER DETAILS:</strong><br/>
-            Neater Feeder<sup>&reg;</sup> Express for cats and small dogs is only $19.99 plus $7.99 S&amp;H, and just
-            $39.99 plus $9.99 S&amp;H for medium and large dogs. When you order today, you'll also receive two
-            additional stainless steel bowls FREE (total of 4 bowls)! Neater Feeder<sup>&reg;</sup> Express comes with a
-            30 Day, 100% Money Back Guarantee!</p>
-        <p>Tax will be applied to orders shipping to Michigan, Pennsylvania and Virginia. Additional $10 shipping to
-            Alaska and Hawaii.</p>
+            Receive two (2) Neater Bag™ Dispensers, each with 30 bags, plus receive an additional 6 pack of bags (90 bags), all for just $19.99 plus $6.99 processing and handling. That's a total of 2 dispensers and 150 bags. As an option, you may also add a FREE Neater Feeder™ Express to your order, you just pay the separate processing and handling - $9.99 P&amp;H for the Small (for Cats/Small dogs), or $19.99 P&amp;H for the Large (for Medium/Large dogs). Limit 1 Neater Feeder™ per order. Special Neater Feeder™ offer is only available with your purchase of the main Neater Bag™ dispenser offer.<br><br>
+            Tax will be applied to orders shipping to Michigan, Pennsylvania and Virginia. Additional $10 shipping to Alaska and Hawaii.</p>
     </div>
     <a href="javascript:" data-sn-id="47837" class="dtm-sn-footer" style="display: none;">Edit</a>
     <!--                     </form> -->

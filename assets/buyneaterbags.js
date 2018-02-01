@@ -289,11 +289,21 @@ $(document).ready(function () {
     }
 
     //Action: clear cart afterlogo click
-    $("#logo img").on("click", function (e) {
+    $("h1 .logo__image").on("click", function (e) {
         e.preventDefault();
         clearCartNb();
         location.href = "/";
     });
 
+    // Smooth scrolling
+    $(document).on('click', 'a[href*=#]:not([href=#])', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 700);
+
+        return false;
+    });
 
 });

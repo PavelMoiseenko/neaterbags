@@ -6,9 +6,9 @@ assets/amex.png:
 assets/bg-music.png:
   development: 2018-01-24T09:01:29-05:00   c661fa9704e7ec925baab3dff9153462
 assets/buyneaterbags.js:
-  development: 2018-01-30T11:06:29-05:00   4c77ab0facccc0c467b0b2e49ed686ff
+  development: 2018-01-31T07:51:33-05:00   fcc303c557cf9a5ce8236470bb6e7b83
 assets/custom.css:
-  development: 2018-01-30T10:00:29-05:00   e7dd90223a7ab9d1eb4286175c834b7c
+  development: 2018-01-30T12:13:42-05:00   cb730e1359bc86703567eba89a0dcf1e
 assets/discover.png:
   development: 2018-01-24T09:00:53-05:00   8f6639fd2abb3fb96429ff8d2b160efc
 assets/favicon.ico:
@@ -44,7 +44,7 @@ assets/respond-proxy.html:
 assets/simple_arctic_modal.css:
   development: 2018-01-24T09:01:45-05:00   2289a5613eb70449246648b3b5c4f3e0
 assets/site.css.liquid:
-  development: 2018-01-30T10:19:51-05:00   a2e7400f7454cb356ce7887f0e474b67
+  development: 2018-01-31T08:40:14-05:00   8dbd2c3c006b3e9f8b99727ae3b6c113
 assets/theme.js:
   development: 2018-01-24T09:01:43-05:00   32657b9209dbe0cd6a21f9985a8d19c3
 assets/theme.scss.liquid:
@@ -58,7 +58,7 @@ config/settings_schema.json:
 layout/password.liquid:
   development: 2018-01-24T09:00:33-05:00   837712942803f4b2ef36dbd86c32e65b
 layout/theme.liquid:
-  development: 2018-01-30T09:00:51-05:00   5eda57deeadafdef75aa7208cdad43d5
+  development: 2018-01-31T08:37:51-05:00   7fe190565057c24f6f3a322587604b17
 locales/de.json:
   development: 2018-01-24T09:01:26-05:00   33b491c4aaba082df97ebf3d352aaad3
 locales/en.default.json:
@@ -98,9 +98,9 @@ sections/featured-product.liquid:
 sections/featured-video.liquid:
   development: 2018-01-24T09:01:37-05:00   8125f658ad90f103df0dd67bed3dff24
 sections/footer.liquid:
-  development: 2018-01-24T09:00:48-05:00   ecd29318add9c6aa96612944821b8edc
+  development: 2018-01-31T07:09:37-05:00   a1498e109f67ac0afb9636eb8719bbe4
 sections/form-template.liquid:
-  development: 2018-01-30T10:19:16-05:00   4304ad9a566bf1f8b5703a6ea775e6d5
+  development: 2018-01-31T08:37:41-05:00   01e133ff764bc710218d307ef9e202aa
 sections/gallery.liquid:
   development: 2018-01-24T09:00:44-05:00   7f80796f0eb998f4a032a1ca450b1cf2
 sections/header.liquid:
@@ -218,11 +218,11 @@ templates/page.full-width-no-heading.liquid:
 templates/page.full-width.liquid:
   development: 2018-01-24T09:01:48-05:00   70e6db67acbee100359ac565a1cc4fbf
 templates/page.liquid:
-  development: 2018-01-24T09:01:19-05:00   85ea65d2f3672e55183b6df4c6f3f873
+  development: 2018-01-31T07:13:30-05:00   a124855b2743d0dab891ff45b584b219
 templates/page.no-heading.liquid:
   development: 2018-01-24T09:00:58-05:00   1217ebf3d69892fe813368050dfa6629
 templates/page.site-map.liquid:
-  development: 2018-01-24T09:01:18-05:00   a3d5b0b3b793e4df5af6f66c25554033
+  development: 2018-01-31T08:28:49-05:00   63c08209febf824e3b3e7579515df5e5
 templates/password.liquid:
   development: 2018-01-24T09:00:57-05:00   27c20529a5fa11780bc067f4f5c7cc9d
 templates/product.liquid:

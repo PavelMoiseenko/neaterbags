@@ -11,16 +11,14 @@
       {{ page.content }}
     </div>-->
     
-    <div id="subtxt">
+    <div id="subLeftCol">
       <h2 class="section-header--title">{{ page.title }}</h2>
       <p class="subpage-text-nav">← <a href="/" title="Back to Home">Back to Home</a> | <a href="#order" title="Order Now!">Order Now!</a> ↓</p>
     	{{ page.content }}
     </div>
-    <div id="sidebar">
+    <div id="subRightCol">
       <div class="dtm-sn-header" data-sn-id="12922" style="width: 100%; height: 1px; display: none;"></div> 
-      {{ 'neater-feeder-express-sub-product.jpg' | file_url | img_tag }}
-      {{ 'neater-feeder-express-price.png' | file_url | img_tag }}
-     	<a href="#order" class="assets ordnwbtn" title="Order Neater Feeder® Express Now!" id="ga-link13">Order Now!</a>
+     	<a href="#order" alt="Fill Out The Form Below To Order Your Neater Bag™ Dispenser Now! This Offer Is Not Available In Stores!">{{ 'neater-bag-sub-offer.jpg' | file_url | img_tag }}</a>
     </div>
     <div class="clearer"></div>
     

@@ -166,28 +166,28 @@
                           {% assign url_custom = link.url %}
                           {% case link.title %}
                                <a href="#">{{ link.title }}</a>
-                            {% when 'Shipping Policy' %}
+                            {% when 'Shipping' %}
                                <a href="#" class='info_popup_1' onclick="$('#exampleModal1').arcticmodal();return false;">{{ link.title }}</a>
                                 <div class="g-hidden">
                                   <div class="box-modal" id="exampleModal1">
                                       <div class="box-modal_close arcticmodal-close">close</div>
-                                      {{ pages.shipping-policy.content }}
+                                      {{ pages.shipping.content }}
                                   </div>
                                 </div>
-                            {% when 'Return Policy' %}
+                            {% when 'Returns' %}
                                <a href="#" class='info_popup_2' onclick="$('#exampleModal2').arcticmodal();return false;">{{ link.title }}</a>
                                 <div class="g-hidden">
                                   <div class="box-modal" id="exampleModal2">
                                       <div class="box-modal_close arcticmodal-close">close</div>
-                                     {{ pages.return-policy.content }}
+                                     {{ pages.returns.content }}
                                   </div>
                                 </div>
-                            {% when 'Security Policy' %}
+                            {% when 'Security' %}
                                <a href="#" class='info_popup_3' onclick="$('#exampleModal3').arcticmodal();return false;">{{ link.title }}</a>
                                 <div class="g-hidden">
                                   <div class="box-modal" id="exampleModal3">
                                       <div class="box-modal_close arcticmodal-close">close</div>
-                                      {{ pages.security-policy.content }}
+                                      {{ pages.security.content }}
                                   </div>
                                 </div>
                             {% else %} 
@@ -198,7 +198,7 @@
                     {% endfor %}
                     <li class="footerLast">
                       <span>
-                      	   <a href='#order'>Order Now!</a>
+                      	   <a href='#order'>Order Now</a>
                       </span>
                     </li>
                   </ul>
@@ -217,7 +217,7 @@
                         <li class="mLink noborder"><span><a href="" title="Neater Feeder&reg; Express Site Map">Site Map</a></span></li>
                         <li class="footerLast"><span><a href="#order" title="Order Neater Feeder&reg; Express Now">Order Now!</a></span></li>
                     </ul>-->
-                    <p><span>©2017 Neater Feeder<sup>&reg;</sup> Express. All Rights Reserved.</span></p>
+                    <p class="copyright"><span>©2018 Neater Bag™ Dispenser. All Rights Reserved.</span></p>
                     <p>
                         <span>
                             <div class="dtm-sn-header" data-sn-id="26725" style="width: 100%; height: 1px; display: none;"></div>Web by:
