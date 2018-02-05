@@ -241,10 +241,12 @@ $(document).ready(function () {
         var selectedDispenser = $("input[name='dispensers']:checked").data("productvariantid");
         var selectedFreeDispenser = $("input[name='freedispensers']:checked").data("productvariantid");
         if(selectedDispenser && selectedFreeDispenser){
+            $('#warning').hide();
             $('#ns-popup').arcticmodal();
         }
         else{
-            $('#nb-popup-no-choice').arcticmodal();
+            // $('#nb-popup-no-choice').arcticmodal();
+            $('#warning').show();
         }
     });
 
