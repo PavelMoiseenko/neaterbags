@@ -122,7 +122,7 @@
 
                 <div class="grid__item one-third text-center">
                   <label for="updates_{{ item.key }}" class="cart__mini-labels">{{ 'cart.label.quantity' | t }}</label>
-                  <input type="number" class="cart__quantity-selector" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" aria-label="{{ 'cart.label.quantity' | t }}">
+                  <input readonly type="number" class="cart__quantity-selector disabled-in-cart" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" aria-label="{{ 'cart.label.quantity' | t }}">
                 </div>
 
                 <div class="grid__item one-third text-right">
@@ -184,7 +184,8 @@
             {% endcomment %}
             <a id="continue-shopping" class="btn--secondary" href="/collections/all">{{ 'cart.general.continue_shopping' | t }}</a>
 
-            <button type="submit" name="update" class="btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>
+            <!--<button type="submit" name="update" class="btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>-->
+            <button type="button" id="clear-btn" class="btn--secondary update-cart">Clear Cart</button>
             <button type="submit" name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
 
             {% if additional_checkout_buttons %}

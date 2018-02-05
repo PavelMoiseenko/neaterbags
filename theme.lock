@@ -6,9 +6,9 @@ assets/amex.png:
 assets/bg-music.png:
   development: 2018-01-24T09:01:29-05:00   c661fa9704e7ec925baab3dff9153462
 assets/buyneaterbags.js:
-  development: 2018-01-31T07:51:33-05:00   fcc303c557cf9a5ce8236470bb6e7b83
+  development: 2018-02-05T11:41:06-05:00   4c34fbfb79c4581d0ba50b541d3e7467
 assets/custom.css:
-  development: 2018-01-30T12:13:42-05:00   cb730e1359bc86703567eba89a0dcf1e
+  development: 2018-02-05T11:22:44-05:00   3dd3aa7ded8c851779ee8176ea083472
 assets/discover.png:
   development: 2018-01-24T09:00:53-05:00   8f6639fd2abb3fb96429ff8d2b160efc
 assets/favicon.ico:
@@ -78,7 +78,7 @@ sections/article-template.liquid:
 sections/blog-template.liquid:
   development: 2018-01-24T09:00:43-05:00   89961bf2f933d63dc1fafe5df2d0fc8d
 sections/cart-template.liquid:
-  development: 2018-01-24T09:00:59-05:00   ec696b7b5ab750c0264a0c5b9c2eb9bf
+  development: 2018-02-05T11:40:23-05:00   8dbea2ab5c359832ab8ff317eea2be04
 sections/collection-list.liquid:
   development: 2018-01-24T09:00:34-05:00   5ce167a04cb4d3216afbe926670ff26b
 sections/collection-template.liquid:

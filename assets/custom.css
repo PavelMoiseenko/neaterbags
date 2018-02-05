@@ -5,6 +5,9 @@
     text-align: center;
 }
 
+.disabled-in-cart{
+    background-color: #ccc;
+}
 
 input[type=submit].confirm_input_btn {
     height: 40px;
